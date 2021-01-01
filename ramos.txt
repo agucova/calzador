@@ -1,0 +1,62 @@
+20026	TTF010	Teologia Fundamental	Sotomayor Cristian	M-J:2
+20863	TTF010	Teologia Fundamental	Sepulveda Mauricio	L-W:1
+14059	TTF021	Religiones y Cristianismo	Bentue Antonio	W:5,6
+25419	TTF021	Religiones y Cristianismo	Bentue Antonio	M:5,6
+25420	TTF023	Desafios a la Fe Cristiana	Perez Angela	L-W:1
+25421	TTF023	Desafios a la Fe Cristiana	Perez Angela	L-W:3
+13768	TTF027	Jesus: Distintas Comprensiones	Pardo Felipe	M-J:5
+13771	TTF027	Jesus: Distintas Comprensiones	Pardo Felipe	L-W:5
+25422	TTF027	Jesus: Distintas Comprensiones	Pardo Felipe	L-W:6
+23060	TTF030	La Persona de Jesucristo	Espinosa Juan	M-J:2
+25423	TTF030	La Persona de Jesucristo	Condori Jaime	W:2,3
+23061	TTF036	La Biblia de Jesús	Sepulveda Juan	M-J:4
+25424	TTF036	La Biblia de Jesús	Sepulveda Juan	M-J:6
+20857	TTF039	El Padrenuestro: la Oracion que Jesus Enseno	Alvarez Rodrigo	M-J:1
+23788	TTF039	El Padrenuestro: la Oracion que Jesus Enseno	Silva Joaquin	M-J:6
+20848	TTF040	Doctrina Social de la Iglesia	Miranda Diego	M-J:2
+20849	TTF040	Doctrina Social de la Iglesia	Miranda Diego	M-J:3
+20881	TTF040	Doctrina Social de la Iglesia	Miranda Diego	V:2,3
+23073	TTF041	Fe y Razon. Una Perspectiva Historica	Sepulveda Mauricio	L-W:3
+25425	TTF043	Saber y Creer. la Búsqueda de Dios: el Problema Fundamental de la Teología	Alvarez Rodrigo	L-W:1
+25426	TTF043	Saber y Creer. la Búsqueda de Dios: el Problema Fundamental de la Teología	Morales Xavier	W-V:1
+14229	TTF044	Religión y Fe Ante el Reto de la Cultura Moderna	Becker Martin	M-J:3
+21006	TTF044	Religión y Fe Ante el Reto de la Cultura Moderna	Becker Martin	M-J:5
+23077	TTF044	Religión y Fe Ante el Reto de la Cultura Moderna	Nino de Zepeda Rafael	M-J:1
+23080	TTF044	Religión y Fe Ante el Reto de la Cultura Moderna	Nino de Zepeda Rafael	M-J:3
+20866	TTF058	Para Pensar la Muerte	Inzulza Mario	M-J:3
+25440	TTF060	Dios en la Teología Latinoamericana	Por Fijar	L-W:5
+14254	TTF061	Espiritualidad Laical y Opción de Fe en el Mundo	Cracogna Sergio	M-J:6
+14251	TTF061	Espiritualidad Laical y Opción de Fe en el Mundo	Cracogna Sergio	M-J:7
+20027	TTF063	Mujeres y Misticismo: Existencias que Marcan la Historia	Araya Gwendolyn	L-W:1
+25441	TTF063	Mujeres y Misticismo: Existencias que Marcan la Historia	Araya Gwendolyn	L-W:3
+25442	TTF063	Mujeres y Misticismo: Existencias que Marcan la Historia	Barrionuevo Camilo	V:2,3
+15085	TTF068	El Matrimonio Cristiano Hoy	Montes Cristian	M-J:2
+21265	TTF068	El Matrimonio Cristiano Hoy	Martínez Marco	L-W:5
+20859	TTF073	Fin de los Tiempos. Mitos y Realidad	Bello Haddy	L-W:5
+14299	TTF075	La Liturgia, Encuentro Con Jesucristo	Barros Javier	M-J:3
+14301	TTF076	Los Fundamentos de las Consecuencias Morales de la Fe Cristiana	Lopez Paulo	M-J:2
+23089	TTF077	La Iglesia en la que (No) Creemos	Rebolledo Gonzalo	M-J:1
+25443	TTF077	La Iglesia en la que (No) Creemos	Por Fijar	W-V:2
+23090	TTF078	Caminos de Diálogo Con el Judaísmo, Cristianismo e Islam	Por Fijar	L-W:4
+23747	TTF079	Experiencia Cristiana y Compromiso Social	Verdugo Fernando	M-J:3
+14312	TTF080	¿Quién Es el Hombre? Una Mirada Desde la Antropología Cristiana	Espinosa Juan	M-J:3
+23092	TTF080	¿Quién Es el Hombre? Una Mirada Desde la Antropología Cristiana	Nunez Cristian	L-J:1
+23095	TTF080	¿Quién Es el Hombre? Una Mirada Desde la Antropología Cristiana	Nunez Cristian	L-J:2
+25444	TTF081	Cristianismo y Disidencia: Una Mirada Histórica	Cardoso Edilmar	L-J:4
+23096	TTF082	Fe y Cultura	Nino de Zepeda Rafael	L-W:1
+25445	TTF082	Fe y Cultura	Nino de Zepeda Rafael	L-W:3
+25446	TTF084	Lecturas Contemporáneas de la Biblia	Greene Guillermo	W-V:1
+25447	TTF084	Lecturas Contemporáneas de la Biblia	Greene Guillermo	W-V:2
+14319	TTF085	¿Es la Fe Una Respuesta a las Inquietudes del Hombre?	Cobo Sergio	M-J:1
+14325	TTF087	¿Está Dios en el Escenario Humano?	Bentue Antonio	J:5,6
+23101	TTF087	¿Está Dios en el Escenario Humano?	Gacitua Victor	L:2,3
+25448	TTF087	¿Está Dios en el Escenario Humano?	Gacitua Victor	L:5,6
+25449	TTF089	La Sexualidad Humana en la Tradición Cristiana	Leal Claudia	W-V:2
+23102	TTF090	Los Cristos del Cine	Soler Fernando	L:4,5
+23105	TTF091	Leer el Evangelio en el Siglo Xxi	Carbullanca César	M-J:2
+23107	TTF091	Leer el Evangelio en el Siglo Xxi	Condori Jaime	W:4,5
+16457	TTF094	Teología del Cuerpo Humano	Lombardo Patricio	M:2,3
+20033	TTF094	Teología del Cuerpo Humano	Lombardo Patricio	M:5,6
+20032	TTF097	Liturgia: Celebrar Aquello que Se Cree	Fernandez de Castro Osvaldo	W-V:2
+25451	TTF097	Liturgia: Celebrar Aquello que Se Cree	Fernandez de Castro Osvaldo	W-V:3
+21702	TTF109	La Belleza de la Fragilidad Humana	Ponzoni Federico	M-J:5
