@@ -29,12 +29,12 @@ jobs:
         uses: JackMcKew/pyinstaller-action-windows@v0.1.2
         with:
           # Directory containing source code (optional requirements.txt).
-          path: src/
+          path: src
       - name: PyInstaller Linux
         uses: JackMcKew/pyinstaller-action-linux@0.1.4
         with:
           # Directory containing source code & .spec file (optional requirements.txt).
-          path: src/
+          path: src
       - uses: actions/upload-artifact@v2
         with:
           name: windows
