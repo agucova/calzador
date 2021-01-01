@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ["src/calzador.py"],
+    ["calzador.py"],
     binaries=[],
     datas=[("src/ramos.txt", "datos")],
     hiddenimports=[],
