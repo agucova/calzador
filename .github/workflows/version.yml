@@ -3,6 +3,7 @@ on:
     # Sequence of patterns matched against refs/tags
     tags:
       - "v*" # Push events to matching v*, i.e. v1.0, v20.15.10
+  workflow_dispatch:
 
 name: Publicar versión
 
@@ -36,7 +37,7 @@ jobs:
           draft: false
           prerelease: false
       - name: Subir .exe
-        id: upload-release-asset
+        id: upload-exe
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -46,7 +47,7 @@ jobs:
           asset_name: calzador.exe
           asset_content_type: application/vnd.microsoft.portable-executable
       - name: Subir ELF
-        id: upload-release-asset
+        id: upload-elf
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
