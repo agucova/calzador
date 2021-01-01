@@ -2,13 +2,13 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build-linux:
+  build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -29,12 +29,12 @@ jobs:
         uses: JackMcKew/pyinstaller-action-windows@v0.1.2
         with:
           # Directory containing source code (optional requirements.txt).
-          path: /
+          path: src/
       - name: PyInstaller Linux
         uses: JackMcKew/pyinstaller-action-linux@0.1.4
         with:
           # Directory containing source code & .spec file (optional requirements.txt).
-          path: /
+          path: src/
       - uses: actions/upload-artifact@v2
         with:
           name: windows

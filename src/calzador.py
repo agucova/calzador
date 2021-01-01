@@ -5,6 +5,18 @@ from sys import stdout
 from csv import writer
 
 
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    """ Gracias https://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
+
 def clear():
     system("cls" if name == "nt" else "clear")
 
@@ -33,16 +45,16 @@ def escribir(vel, str):
 
 
 creds()
-sleep(1)
+sleep(0.6)
 creds()
 print("          *                                  ")
-sleep(1)
+sleep(0.6)
 creds()
 print("          *           *                      ")
-sleep(1)
+sleep(0.6)
 creds()
 print("          *           *           *          ")
-sleep(1)
+sleep(0.6)
 creds()
 input("        Presiona ENTER para continuar        ")
 clear()
@@ -60,25 +72,25 @@ if tuto == "no":
     tuto = 1
     print("ERROR, INTENTA DENUEVO")
     sleep(3)
-    escribir(0.1, "te la creiste?")
+    escribir(0.05, "te la creiste?")
     yn1 = input("si/no\n")
     if yn1 == "si":
-        escribir(0.1, "Puta que eris wn")
+        escribir(0.05, "Puta que eris wn")
     elif yn1 == "no":
-        escribir(0.1, "No te creo, wn chanta lsdjfhkg")
+        escribir(0.05, "No te creo, wn chanta lsdjfhkg")
     else:
-        escribir(0.1, "Uhhh no entendi, sorry no hablo universitario pretencioso")
+        escribir(0.05, "Uhhh no entendi, sorry no hablo universitario pretencioso")
     sleep(2)
     clear()
-    escribir(0.1, "Ya mira tranqui, es tu primera vez asi que te guiare.")
+    escribir(0.05, "Ya mira tranqui, es tu primera vez asi que te guiare.")
     sleep(0.5)
-    escribir(0.1, "Cuando te pida los horarios tienes que poner el dia y modulo")
+    escribir(0.05, "Cuando te pida los horarios tienes que poner el dia y modulo")
     escribir(0.5, "JUNTOS.")
     sleep(1)
-    escribir(0.1, "Si tuvieras el lunes en el primer modulo seria L1,")
-    escribir(0.1, "miercoles en el tercer modulo seria W3 y asi...")
+    escribir(0.05, "Si tuvieras el lunes en el primer modulo seria L1,")
+    escribir(0.05, "miercoles en el tercer modulo seria W3 y asi...")
     escribir(0.3, "Por favor recuerda ingresarlos UNO A UNO")
-    escribir(0.1, "Vamos denuevo.")
+    escribir(0.05, "Vamos denuevo.")
     sleep(3)
     clear()
 
@@ -105,7 +117,7 @@ ciclo1 = 0
 print("¿En que horario tienes catedra? (formato L1)")
 print("Presiona ENTER si no tienes catedra")
 sleep(2)
-escribir(0.1, "o si no las quieres considerar. Sospechoso...")
+escribir(0.05, "o si no las quieres considerar. Sospechoso...")
 fallos = 0
 check = 0
 procheck = 0
@@ -114,13 +126,13 @@ procount = 0
 while ciclo1 == 0:
     entry = input("> ")
     if fallos >= 5 and check == 0:
-        escribir(0.1, "Te equivocaste demasiadas veces.")
+        escribir(0.05, "Te equivocaste demasiadas veces.")
         escribir(0.2, "CERRANDO PROGRAMA")
         sleep(2)
-        escribir(0.1, "jijibromis")
+        escribir(0.05, "jijibromis")
         sleep(1.5)
-        escribir(0.1, "Si aun no entiendes cierrame y abreme (7u7) denuevo,")
-        escribir(0.1, "asi puedes leer el tutorial otra vez.")
+        escribir(0.05, "Si aun no entiendes cierrame y abreme (7u7) denuevo,")
+        escribir(0.05, "asi puedes leer el tutorial otra vez.")
         sleep(1)
         print("Vamos, intenta denuevo")
         check = 1
@@ -142,14 +154,14 @@ while ciclo1 == 0:
     elif len(entry) == 2 and (
         entry[0] not in "LMWJVSlmwjvs" or entry[1] not in "12345678"
     ):
-        escribir(0.1, "¿Que estas pasandome? Sosio se equivoco de programa")
+        escribir(0.05, "¿Que estas pasandome? Sosio se equivoco de programa")
         print("Vamos, intenta denuevo")
         fallos += 1
     elif len(entry) != 2:
-        escribir(0.1, "Formato incorrecto, bro.")
+        escribir(0.05, "Formato incorrecto, bro.")
         sleep(0.3)
-        escribir(0.1, "Tampoco es tan dificil,")
-        escribir(0.1, "recuerda que el formato es el dia, seguido del modulo")
+        escribir(0.05, "Tampoco es tan dificil,")
+        escribir(0.05, "recuerda que el formato es el dia, seguido del modulo")
         escribir(0.5, "JUNTOS.")
         sleep(0.3)
         escribir(
@@ -160,13 +172,13 @@ while ciclo1 == 0:
         print("Vamos, intenta denuevo")
         fallos += 2
     elif entry.upper() in cat:
-        escribir(0.1, "Esa ya estaba registrada.")
-        escribir(0.1, "Si ya terminaste apreta ENTER nms, con confianza.")
+        escribir(0.05, "Esa ya estaba registrada.")
+        escribir(0.05, "Si ya terminaste apreta ENTER nms, con confianza.")
     else:
         cat.append(entry.upper())
         if procheck == 0:
-            escribir(0.1, "Wena, la siguiente catedra porfa.")
-            escribir(0.1, "Si ya terminaste apreta ENTER nms, con confianza.")
+            escribir(0.05, "Wena, la siguiente catedra porfa.")
+            escribir(0.05, "Si ya terminaste apreta ENTER nms, con confianza.")
             procount += 1
             if procount >= 2:
                 procheck = 1
@@ -183,13 +195,13 @@ if fallos - 2 >= 0:
 while ciclo2 == 0:
     entry = input("> ")
     if fallos >= 5 and check == 0:
-        escribir(0.1, "Te equivocaste demasiadas veces.")
+        escribir(0.05, "Te equivocaste demasiadas veces.")
         escribir(0.2, "CERRANDO PROGRAMA")
         sleep(2)
-        escribir(0.1, "jijibromis")
+        escribir(0.05, "jijibromis")
         sleep(1.5)
-        escribir(0.1, "Si aun no entiendes cierrame y abreme (7u7) denuevo,")
-        escribir(0.1, "asi puedes leer el tutorial otra vez.")
+        escribir(0.05, "Si aun no entiendes cierrame y abreme (7u7) denuevo,")
+        escribir(0.05, "asi puedes leer el tutorial otra vez.")
         sleep(1)
         print("Vamos, intenta denuevo")
         check = 1
@@ -211,14 +223,14 @@ while ciclo2 == 0:
     elif len(entry) == 2 and (
         entry[0] not in "LMWJVSlmwjvs" or entry[1] not in "12345678"
     ):
-        escribir(0.1, "¿Que estas pasandome? Sosio se equivoco de programa")
+        escribir(0.05, "¿Que estas pasandome? Sosio se equivoco de programa")
         print("Vamos, intenta denuevo")
         fallos += 1
     elif len(entry) != 2:
-        escribir(0.1, "Formato incorrecto, bro.")
+        escribir(0.05, "Formato incorrecto, bro.")
         sleep(0.3)
-        escribir(0.1, "Tampoco es tan dificil,")
-        escribir(0.1, "recuerda que el formato es el dia, seguido del modulo")
+        escribir(0.05, "Tampoco es tan dificil,")
+        escribir(0.05, "recuerda que el formato es el dia, seguido del modulo")
         escribir(0.5, "JUNTOS.")
         sleep(0.3)
         escribir(
@@ -229,13 +241,13 @@ while ciclo2 == 0:
         print("Vamos, intenta denuevo")
         fallos += 2
     elif entry.upper() in lab:
-        escribir(0.1, "Ese ya estaba registrado.")
-        escribir(0.1, "Si ya terminaste apreta ENTER nms, con confianza.")
+        escribir(0.05, "Ese ya estaba registrado.")
+        escribir(0.05, "Si ya terminaste apreta ENTER nms, con confianza.")
     else:
         lab.append(entry.upper())
         if procheck == 0:
-            escribir(0.1, "Wena, el siguiente laboratorio porfa.")
-            escribir(0.1, "Si ya terminaste apreta ENTER nms, con confianza.")
+            escribir(0.05, "Wena, el siguiente laboratorio porfa.")
+            escribir(0.05, "Si ya terminaste apreta ENTER nms, con confianza.")
             procount += 1
             if procount >= 2:
                 procheck = 1
@@ -252,13 +264,13 @@ if fallos - 2 >= 0:
 while ciclo3 == 0:
     entry = input("> ")
     if fallos >= 5 and check == 0:
-        escribir(0.1, "Te equivocaste demasiadas veces.")
+        escribir(0.05, "Te equivocaste demasiadas veces.")
         escribir(0.2, "CERRANDO PROGRAMA")
         sleep(2)
-        escribir(0.1, "jijibromis")
+        escribir(0.05, "jijibromis")
         sleep(1.5)
-        escribir(0.1, "Si aun no entiendes cierrame y abreme (7u7) denuevo,")
-        escribir(0.1, "asi puedes leer el tutorial otra vez.")
+        escribir(0.05, "Si aun no entiendes cierrame y abreme (7u7) denuevo,")
+        escribir(0.05, "asi puedes leer el tutorial otra vez.")
         sleep(1)
         print("Vamos, intenta denuevo")
         check = 1
@@ -280,14 +292,14 @@ while ciclo3 == 0:
     elif len(entry) == 2 and (
         entry[0] not in "LMWJVSlmwjvs" or entry[1] not in "12345678"
     ):
-        escribir(0.1, "¿Que estas pasandome? Sosio se equivoco de programa")
+        escribir(0.05, "¿Que estas pasandome? Sosio se equivoco de programa")
         print("Vamos, intenta denuevo")
         fallos += 1
     elif len(entry) != 2:
-        escribir(0.1, "Formato incorrecto, bro.")
+        escribir(0.05, "Formato incorrecto, bro.")
         sleep(0.3)
-        escribir(0.1, "Tampoco es tan dificil,")
-        escribir(0.1, "recuerda que el formato es el dia, seguido del modulo")
+        escribir(0.05, "Tampoco es tan dificil,")
+        escribir(0.05, "recuerda que el formato es el dia, seguido del modulo")
         escribir(0.5, "JUNTOS.")
         sleep(0.3)
         escribir(
@@ -298,13 +310,13 @@ while ciclo3 == 0:
         print("Vamos, intenta denuevo")
         fallos += 2
     elif entry.upper() in ayu:
-        escribir(0.1, "Esa ya estaba registrada.")
-        escribir(0.1, "Si ya terminaste apreta ENTER nms, con confianza.")
+        escribir(0.05, "Esa ya estaba registrada.")
+        escribir(0.05, "Si ya terminaste apreta ENTER nms, con confianza.")
     else:
         ayu.append(entry.upper())
         if procheck == 0:
-            escribir(0.1, "Wena, la siguiente ayudantia porfa.")
-            escribir(0.1, "Si ya terminaste apreta ENTER nms, con confianza.")
+            escribir(0.05, "Wena, la siguiente ayudantia porfa.")
+            escribir(0.05, "Si ya terminaste apreta ENTER nms, con confianza.")
             procount += 1
             if procount >= 2:
                 procheck = 1
@@ -312,7 +324,7 @@ while ciclo3 == 0:
             print("Wena, la siguiente ayudantia porfa.")
             print("Si ya terminaste apreta ENTER nms, con confianza.")
 
-escribir(0.1, "Revisando los teologicos existentes y ajustando la prioridad.")
+escribir(0.05, "Revisando los teologicos existentes y ajustando la prioridad.")
 sleep(0.5)
 clear()
 print("Revisando los teologicos existentes y ajustando la prioridad.")
@@ -335,9 +347,9 @@ def progress(percent=0, width=30):
 
 for i in range(101):
     progress(i)
-    sleep(0.1)
+    sleep(0.03)
 print("")
-escribir(0.1, "Exportando archivo...")
+escribir(0.05, "Exportando archivo...")
 sleep(1)
 
 
@@ -346,10 +358,12 @@ def prioridad(ramo):
 
 
 try:
-    with open("ramos.txt", "r", encoding="utf-8") as ram:
+    with open(resource_path("datos/ramos.txt"), "r", encoding="utf-8") as ram:
         ramos = ram.readlines()
 except FileNotFoundError:
-    exit("No tienes ramos.txt en la misma carpeta. Por favor intenta de nuevo uwu")
+    exit(
+        "No tienes datos/ramos.txt en la misma carpeta. Por favor intenta de nuevo uwu"
+    )
 
 for i in range(len(ramos)):
     ramos[i] = ramos[i].strip("\n").split("\t")
@@ -399,6 +413,6 @@ with open("teoFinal.csv", "w", newline="") as write_obj:
 escribir(
     0.1, 'Archivo "TeologicoFinalEstesiiiiiiiHD4K real siquesi FINAL.csv" exportado.'
 )
-escribir(0.1, "Gracias por preferirme :)")
+escribir(0.05, "Gracias por preferirme :)")
 sleep(3)
 clear()
