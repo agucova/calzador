@@ -38,8 +38,8 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: windows
-          path: dist/windows
+          path: dist/windows/calzador.exe
       - uses: actions/upload-artifact@v2
         with:
           name: linux
-          path: dist/linux
+          path: dist/linux/calzador
